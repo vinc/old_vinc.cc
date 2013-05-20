@@ -4,3 +4,35 @@
 html {
   background: $page-bg image-url('bg.png') top left;
 }
+
+body:before {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  content: "";
+  height: 10px;
+  left: 0;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  z-index: 100;
+}
+
+header[role="banner"] {
+  display:inline-block;
+}
+
+nav[role="navigation"] {
+  display: inline-block;
+  float: right;
+}
+
+h1,
+#blog-archives h1 a {
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: #ccc 1px 1px 2px;
+}
+
+body#home #content > div {
+  float: none;
+  padding: 0;
+}
