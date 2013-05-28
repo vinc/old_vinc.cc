@@ -4,3 +4,8 @@
     <h2>{{ site.subtitle }}</h2>
   {% endif %}
 </hgroup>
+{% if page.github %}
+    <a href="https://github.com/{{ site.github }}/{{ page.github }}">
+        <img style="position:absolute;top:0;right:0;border:0" src="/images/forkme.png" alt="Fork me on GitHub" />
+    </a>
+{% endif %}
