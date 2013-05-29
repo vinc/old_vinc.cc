@@ -7,19 +7,25 @@ footer: false
 github: "dasort"
 ---
 
-DaSort is a CLI tool for sorting and grouping picture by date.
+DaSort is a CLI tool for organizing by creation date.
 
-It is written in Python and need pyexiv2 module to read Exif data in
-pictures. Argparse module is also required but it is now included in
-Python 2.7.
+It is written in Python and it requires the `pyexiv2` module to read Exif data
+stored in pictures. The `argparse` module is also required but it is included
+by default in Python 2.7.
 
 A duplication detection algorithm is built in DaSort to skip duplicate
 pictures without forgeting different versions of the same original.
 
+
 Installation
 ------------
 
-Installing from source: `git clone git://github.com/vinc/dasort.git; cd dasort; python setup.py install`
+Installing from source:
+
+    $ git clone git://github.com/vinc/dasort.git
+    $ cd dasort
+    $ sudo python setup.py install
+
 
 Usage
 -----
@@ -36,18 +42,20 @@ Importing pictures to a sorted tree is as simple as:
      27991 duplicated pictures ignored
      473 files ignored (listed in 'ignored.txt')
 
-With the duplication detection algorithm this command can be run from multiple
-sources to the same destination.
+Thanks to the duplication detection algorithm, this command can be run from
+multiple sources to the same destination.
 
-Use `dasort -s` to make symbolic links instead of copy.
+Symbolic links can be used instead of copy with `dasort -s`.
+
 
 Supported image formats
 -----------------------
 
-The following formats have been successfuly tested: JPEG, CR2, CRW, TIFF.
+The following formats have been successfully tested: `JPEG`, `CR2`, `CRW`,
+`TIFF`.
 
 Proprietary RAW format from other brands than Canon have not been tested yet
-but they should work too. Let me now.
+but they should work too.
 
-DaSort also recognise UFRaw ID files containing all the conversion parameters
-so they will be imported too.
+DaSort also recognises UFRaw ID files containing all the conversion parameters
+so they will be also imported.

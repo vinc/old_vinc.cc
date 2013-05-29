@@ -9,7 +9,7 @@ footer: false
 Free and Open Source Software
 -----------------------------
 
-* [DaSort](/projects/dasort): sort and group pictures by date from Exif data
+* [DaSort](/projects/dasort): organize pictures by creation date
 * [Junla](/projects/junla): anti-procrastination proxy
 * [Memorious](/projects/memorious): minimalist command line password manager
 * [Occet](/projects/occet): Open Cluster for Chess Engine Testing
