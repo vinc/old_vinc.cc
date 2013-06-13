@@ -39,14 +39,14 @@ keeps the hostname of the old one:
 
 The manual available through `man ssh` contains a relevant entry:
 
-> *ssh* automatically maintains and checks a database containing
+> **ssh** automatically maintains and checks a database containing
 > identification for all hosts it has ever been used with. Host keys are stored
 > in `~/.ssh/known_hosts` in the user's home directory. Additionally, the file
 > `/etc/ssh/ssh_known_hosts` is automatically checked for known hosts. Any new
 > hosts are automatically added to the user's file. If a host's identification
-> ever changes, *ssh* warns about this and disables password authentication
+> ever changes, **ssh** warns about this and disables password authentication
 > to prevent server spoofing or man-in-the-middle attacks, which could
-> otherwise be used to circumvent the encryption. The *StrictHostKeyChecking*
+> otherwise be used to circumvent the encryption. The **StrictHostKeyChecking**
 > option can be used to control logins to machines whose host key is not known
 > or has changed.
 
@@ -59,10 +59,10 @@ I used to do this modification by end for years. At some point I switched to a
 recently did I find out the existence of a very handy flag to `ssh-keygen` as
 described by the manual:
 
-> *-R* hostname
+> **-R** hostname
 >
 > Removes all keys belonging to _hostname_ from a _known_hosts_ file.
-> This option is useful to delete hashed hosts (see the *-H* option
+> This option is useful to delete hashed hosts (see the **-H** option
 > above).
 
 This command is worth remembering if the case occurs frequently:
