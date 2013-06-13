@@ -3,6 +3,7 @@ layout: page
 comments: false
 sharing: false
 footer: false
+body_id: home
 ---
 
 Hi, I’m [Vinc](/about).

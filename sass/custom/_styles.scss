@@ -3,6 +3,7 @@
 
 html {
   background: $page-bg image-url('bg.png') top left;
+  height: 100%;
 }
 
 body:before {
@@ -32,11 +33,6 @@ h1,
   text-shadow: #ccc 1px 1px 2px;
 }
 
-body#home #content > div {
-  float: none;
-  padding: 0;
-}
-
 .subscription {
   display: none;
 }
@@ -52,4 +48,65 @@ article blockquote {
 body > footer {
   text-align: center;
   margin-bottom: 0;
+}
+
+
+// Homepage
+
+body#home {
+  display: -webkit-box;
+  display:    -moz-box;
+  display:     -ms-box;
+  display:         box;
+  -webkit-box-orient: horizontal;
+     -moz-box-orient: horizontal;
+      -ms-box-orient: horizontal;
+          box-orient: horizontal;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-box-align: center;
+          box-align: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-box-pack: center;
+          box-pack: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+
+  header[role="banner"],
+  nav[role="navigation"],
+  > footer {
+    display: none;
+  }
+
+  #content > div {
+    float: none;
+    padding: 0;
+
+    article[role="article"] {
+      padding: 0;
+
+      p {
+        color: #777;
+        font-size: 3em;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.2em;
+        margin: 0;
+        text-shadow: #ccc 1px 1px 2px;
+
+        a {
+          color: #444440;
+          font-weight: 800;
+          text-decoration: none;
+          text-shadow: #ccc 1px 1px 2px, #000 0 -1px 1px;
+
+          &:hover {
+            color: #222220;
+          }
+        }
+      }
+    }
+  }
 }
