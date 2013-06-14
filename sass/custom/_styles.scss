@@ -55,6 +55,9 @@ body > footer {
   margin-bottom: 0;
 }
 
+.author .fn:before {
+  content: "By ";
+}
 
 // Homepage
 
