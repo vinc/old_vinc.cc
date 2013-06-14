@@ -118,3 +118,32 @@ body#home {
     }
   }
 }
+
+article p.meta {
+  color: $title-color;
+}
+
+article > header > p.meta {
+  font-style: italic;
+  font-size: 1.3em;
+  text-transform: none;
+  position: inherit;
+  top: inherit;
+  margin-top: 1em;
+}
+
+article > footer > p.meta {
+  > *:before {
+    content: "";
+  }
+
+  time,
+  .author {
+    display: none;
+  }
+
+  .categories:before {
+    content: "Tags:";
+    padding: 0 0.2em 0 0;
+  }
+}
