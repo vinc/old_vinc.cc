@@ -147,3 +147,7 @@ article > footer > p.meta {
     padding: 0 0.2em 0 0;
   }
 }
+
+#content .blog-index a[rel=full-article]:hover {
+  color: #ccc;
+}
