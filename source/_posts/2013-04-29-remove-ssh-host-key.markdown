@@ -54,7 +54,7 @@ Now in the case of a new server reusing the same hostname, it is perfectly
 expected for the host key to have changed. The solution is simply to edit the
 file `~/.ssh/known_hosts` to remove the given line.
 
-I used to do this modification by end for years. At some point I switched to a
+I used to do this modification by hand for years. At some point I switched to a
 `sed` command for deleting the line without opening a text editor. But only
 recently did I find out the existence of a very handy flag to `ssh-keygen` as
 described by the manual:
