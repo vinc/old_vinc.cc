@@ -26,6 +26,11 @@ nav[role="navigation"] {
   float: right;
 }
 
+h1, h2,
+#blog-archives h1 a {
+  color: $title-color;
+}
+
 h1,
 #blog-archives h1 a {
   font-style: italic;
