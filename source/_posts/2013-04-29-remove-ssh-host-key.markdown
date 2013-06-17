@@ -50,9 +50,13 @@ The manual available through `man ssh` contains a relevant entry:
 > option can be used to control logins to machines whose host key is not known
 > or has changed.
 
+Before going further, it is very important to understand the security
+considerations of this warning as explained by the manual. It should not be
+dismissed without being entirely sure of its cause.
+
 Now in the case of a new server reusing the same hostname, it is perfectly
-expected for the host key to have changed. The solution is simply to edit the
-file `~/.ssh/known_hosts` to remove the given line.
+expected for the host key to have changed. And the solution is simply to edit
+the file `~/.ssh/known_hosts` to remove the given line.
 
 I used to do this modification by hand for years. At some point I switched to a
 `sed` command for deleting the line without opening a text editor. But only
