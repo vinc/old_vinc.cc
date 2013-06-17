@@ -13,7 +13,7 @@ subreddits around specific topics.
 
 But this volume of information can be overwhelming at times, at least in my
 opinion. So I built [Reddit Digest][2] to browse interesting subreddits grouped
-by similar subjects, with only the most popular entries on a chosen period of
+by similar subjects, with only the most popular entries in a chosen period of
 time. And thanks to its responsive design, it works equally well on desktops,
 tablets and smartphones.
 
