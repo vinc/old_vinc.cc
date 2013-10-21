@@ -8,6 +8,6 @@ body_id: home
 
 Hi, I’m [Vinc](/about).
 
-I code [things](/projects),
+I code [things](/projects).
 
-and write [stuff](/blog/archives).
+<!-- and write [stuff](/blog/archives). -->
