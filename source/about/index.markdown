@@ -33,7 +33,7 @@ find something worth sharing.
 
 You can find me on [GitHub](https://github.com/vinc) and
 [Twitter](https://twitter.com/vinc686) and you can also write to
-[me@domain](mailto://me@domain).
+[me@domain](mailto://me@domain) using my [PGP key](/pgp).
 
 <script>
 (function() {
