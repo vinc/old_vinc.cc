@@ -64,7 +64,7 @@ Usage
 
 Importing my public key:
 
-    $ curl --silent http://vinc.cc/pgp.txt | gpg --import
+    $ curl --silent https://vinc.cc/pgp.txt | gpg --import
 
 Encrypting a document:
 
